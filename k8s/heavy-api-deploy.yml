@@ -26,7 +26,7 @@ spec:
             memory: 512M
         env:
         - name: PORT
-          value: '8080'
+          value: '8086'
         ports:
-        - containerPort: 8080
+        - containerPort: 8086
           name: api-port

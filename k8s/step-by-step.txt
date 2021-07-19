@@ -3,3 +3,6 @@ minikube start — extra-config=controller-manager.horizontal-pod-autoscaler-ups
 
 2 - Addons enable metrics-server
 minikube addons enable metrics-server
+
+3 -  microk8s
+microk8s kubectl port-forward service/heavy-api 8086:8086 --namespace default
