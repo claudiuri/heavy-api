@@ -5,7 +5,7 @@ metadata:
   labels:
     app: heavy-api
 spec:
-  type: LoadBalencer
+  type: NodePort
   selector:
     app: heavy-api
   ports:
