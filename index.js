@@ -2,15 +2,15 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT ?? 3000;
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
   res.send('Hello World!');
 })
 
-app.get('/api', function (req, res) {
-  let count = 0;
+app.get('/api', (_, res) => {
+  let count = 0.0001;
 
-  for(let i = 0; i <= 5000000000; i++){
-    count += i;
+  for(let i = 0; i <= 1000000; i++){
+    count += Math.sqrt(i);
   }
 
   res.send(`Final count is ${count}`);
