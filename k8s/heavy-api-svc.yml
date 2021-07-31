@@ -5,11 +5,7 @@ metadata:
   labels:
     app: heavy-api
 spec:
-  type: NodePort
+  ports:
+  - port: 8086
   selector:
     app: heavy-api
-  ports:
-  - protocol: TCP
-    port: 8086
-    name: svc-port
-    targetPort: api-port
